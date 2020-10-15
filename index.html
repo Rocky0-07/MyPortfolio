@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Homepage</title>
+        <meta name="description" content="My Portfolio using HTML, CSS, Bootstrap, Javascript, JQuery">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/home.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/d8c7e812b0.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" 
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+         crossorigin="anonymous"></script>
+        <script src="Script/home.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Piedra&family=Ranchers&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    </head>
+
+    <body onload="fun()">
+        
+        <div id="loader">
+            <div class="spinner-border ">
+            </div>
+            <h4 class="text-center">Relax Amigo</h4>
+        </div>
+
+    <div class="content">
+        
+        <section id="Navbar">
+            
+            <nav class="navbar navbar-expand-md">
+                
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#a" onclick="fun()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="#" class="navbar-brand">My Portfolio</a>
+                
+                <div class="collapse navbar-collapse" id="a">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="#create" class="nav-link" >Home</a><span></span></li>
+                        <li class="nav-item"><a href="About.html" class="nav-link">About</a><span></span></li>
+                        <li class="nav-item"><a href="Feedback.html" class="nav-link">Feedback</a><span></span></li>
+                    </ul>
+                </div>
+
+            </nav>
+        
+        </section>
+
+<!------------------------Carousal 1------------------------->
+
+<section id="Carousel">
+    
+    <div id="c" class="carousel slide" data-ride="carousel">
+        
+        <ul class="carousel-indicators">
+            <li data-target="#c" data-slide-to="0" class="active"></li>
+            <li data-target="#c" data-slide-to="1"></li>
+            <li data-target="#c" data-slide-to="2"></li>
+        </ul>
+        
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+                <h1 id="tex" style="position:absolute;top:10%;left:10%">Welcome_______</h1>
+                <div class="carousel-caption" style="position:absolute; top:35%;">
+                    <h2>I'm Harsha</h2>
+                    <h3>Web product Designer and front-end Developer</h3>
+                </div>
+                <i class="fas fa-circle" style="position:absolute; top:10%;right:10%;"></i>
+                <i class="far fa-circle" style="position:absolute; font-size:6vw; top:13%;right:13%;"></i>
+                <img src="Images/b.png" width="100%" height="100%">
+            </div>
+
+            <div class="carousel-item text-center">
+                <img src="Images/c.png" width="100%" height="100%">
+                <div class="carousel-caption" style="position:absolute;top:41%; left:15%;">
+                    <h2 id="te">I create <b>Modern</b> and <b>Minimal</b> web products</h2>
+                </div>
+                <i class="fas fa-circle" style="position:absolute; top:10%;right:10%;"></i>
+                <i class="far fa-circle" style="position:absolute; font-size:6vw; top:13%;right:13%;"></i>
+            </div>
+            
+            <div class="carousel-item">
+                <div class="carousel-caption" style="position:absolute; top:40%;left:15%;">
+                    <h3 id="text">Cau'z <br>Small details always make Big impressions</h3> 
+                </div>
+                <i class="fas fa-circle" style="position:absolute; top:10%;right:10%;"></i>
+                <i class="far fa-circle" style="position:absolute; font-size:6vw; top:13%;right:13%;"></i>
+                <img src="Images/a.jpg" width="100%" height="100%" style="opacity:0.8">
+            </div>
+        
+        </div>
+        
+        <a href="#c" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        
+        <a href="#c" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    
+    </div>
+
+</section>
+
+<!-----------------------------Create---------------------->
+
+
+<section id="create" class="px-5 pt-5">
+
+    <div id="cre">
+        <p class="text-center">CREATE</p>
+        <p class="text-center a">//</p>
+        <h2><small>Simple and Clean</small></h2>
+        <hr>
+    </div>
+
+    <div class="row text-center pt-5" id="crea">
+
+        <div class="col-md-6 pb-5">
+            <img class="mx-auto d-block" src="Images/design.jpg" width="90%" height="100%">
+        </div>
+
+        <div class="col-md-6  my-auto">
+            <h1>I create <strong>Modern</strong></h1> 
+            <h1 class="pb-3">web products</h1>
+            <ul style="list-style-position:inside;list-style-type:square;">
+                <li>LOGO's</li>
+                <li>UI/UX Design</li>
+                <li>Web Design</li>
+                <li>App Design</li>
+            </ul>              
+        </div>
+        <hr>
+
+    </div>
+
+</section>
+
+
+<!--------------------------Cards---------------------------->
+
+
+<section id="cards">
+
+    <!----------------------------Content------------------------>
+
+<section id="content">
+
+    <div id="qa">
+        <p>WHAT I DO</p>
+        <p>//</p>
+        <h2 class="text-dark">Strategy, Design and bit of Magic</h2>
+        <hr id="hr">
+    </div>
+
+</section>
+    
+    <div class="card-deck mb-5">
+
+        <div class="card text-center py-3 my-3" id="caa">
+            <div class="card-body">
+                <i class="fas fa-search"></i>
+                <h1>Explore</h1>
+                <hr>
+                <p>Ideas</p>
+            </div>
+        </div>
+        
+        <div class="card text-center py-3 my-3" id="cab">
+            <div class="card-body">
+                <i class="fab fa-leanpub"></i>
+                <h1>Learn</h1>
+                <hr>
+                <p>Analyze</p>
+            </div>
+        </div>
+        
+        <div class="card text-center py-3 my-3" id="cac">
+            <div class="card-body">
+                <i class="fas fa-edit"></i>
+                <h1>Create</h1>
+                <hr>
+                <p>Branding</p>
+            </div>
+        </div>
+    
+    </div>
+    <hr style="width:100px;background-color:black; height:initial;">
+
+</section>
+
+
+<!-------------------------Carousal 2------------------------>
+
+
+<section id="caros">
+
+    <div class="container">
+
+        <div id="qb">
+            <p class="text-center">WORK</p>
+            <p class="text-center a">//</p>
+            <h2 class="text-dark"><small>Happy Spending My Time to Projects</small></h2>
+        </div>
+        
+        <div id="carousel-index" class="carousel slide carousel-fade" data-ride="carousel">
+            
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-index" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-index" data-slide-to="1"></li>
+            </ol>
+            
+            <div class="carousel-inner">
+    
+                <div class="carousel-item slide1 active">
+                    <div class="row">
+                        <div class="col-md-6 mx-auto d-block my-3">
+                            <img src="Images/work-2.jpg" width="100%" height="100%">
+                        </div>
+                        
+                        <div class="col-md-6 text-center my-auto pb-3">
+                            <h1>Multi Website Advertisement Handling System</h1>
+                            <a href="#" id="la">More Info</a>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="carousel-item slide2">
+                    <div class="row">
+                        <div class="col-md-6 mx-auto d-block my-3">
+                            <img src="Images/work-3.jpg" width="100%" height="100%">
+                        </div>
+                        
+                        <div class="col-md-6 text-center my-auto pb-3">
+                            <h1>Online Feedback System for student</h1>
+                            <a href="#" id="la">More Info</a>
+                        </div>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+
+</section>
+
+
+<!--------------------------Skills-------------------------->
+
+<section id="skills">
+    
+    <div class="container">
+        
+        <div id="qc">
+            <p class="text-center">SKILLS</p>
+            <p class="text-center a">//</p>
+            <h2 class="text-dark"><small>Happy Spending My Playtime to Improve Skills </small></h2>
+            <hr><br><br>
+        </div>
+
+        <div id="sk">
+
+            <div class="progress" style="height:30px;" id="asa">
+                <div class="progress-bar pga progress-bar-striped" style="width:0%;height:30px;"><h4>HTML</h4></div>
+            </div><br>
+            
+            <div class="progress"style="height:30px;">
+                <div class="progress-bar pgb progress-bar-striped" style="width:0%;height:30px;"><h4>CSS</h4></div>
+            </div><br>
+            
+            <div class="progress"style="height:30px;">
+                <div class="progress-bar pgc progress-bar-striped" style="width:0%;height:30px;"><h4>Bootstrap</h4></div>
+            </div><br>
+            
+            <div class="progress"style="height:30px;">
+                <div class="progress-bar pgd progress-bar-striped" style="width:0%;height:30px;"><h4>JavaScript</h4></div>
+            </div><br>
+            
+            <div class="progress"style="height:30px;">
+                <div class="progress-bar pge progress-bar-striped" style="width:0%;height:30px;"><h4>JQuery</h4></div>
+            </div><br>
+            
+            <div class="progress"style="height:30px;">
+                <div class="progress-bar pgf progress-bar-striped" style="width:0%;height:30px;"><h4>Web Design</h4></div>
+            </div><br>
+            
+            <div class="progress"style="height:30px;">
+                <div class="progress-bar pgg progress-bar-striped" style="width:0%;height:30px;"><h4>Photoshop</h4></div>
+            </div><br>
+
+        </div>
+    
+    </div>
+    <hr style="width:100px;background-color:black;height:initial">
+
+</section>
+
+
+<!-------------------------News Letter--------------------->
+
+
+<section id="news">
+
+    <div id="qd">
+        <p id="np" class="text-center">NEWS</p>
+        <p id="npa" class="text-center a">//</p>
+        <h2 class="text-dark" id="ha">Subscribe for Updates</h2>
+        <hr>
+
+    <h3><i class="fas fa-quote-left"></i> Creativity is nothing but a mind set free.</h3>
+
+    </div>
+
+    <p><i id="aw" class="fas fa-angle-down"></i></p>
+    <i id="ar" class="fas fa-angle-down" style="cursor:pointer;" onclick="funy()"></i>
+
+    <div id="qe" style="display:none;" class="mb-5">
+        <h2>SUBSCRIBE TO NEWS LETTER</h2>
+        <p>Subscribe to this news letter and get latest updates</p>
+        <input type="email" name="Email" placeholder="Email address">
+        <input id="but" type="button" value="Subscribe">
+    </div>
+    <hr style="width:100px;background-color:black;">
+
+</section>
+
+<!------------------------Footer------------------------->
+
+<section id="footer">
+
+    <div>
+        <address style="font-size:20px;">
+            <h1 style="letter-spacing:5px;font-family: 'Dancing Script', cursive;">Contact-info:</h1><hr><br>
+            <i class="fas fa-envelope"></i> Email:rockyharsha000@gmail.com<br>
+            <i class="fas fa-phone"></i> Phone:(+91)9989927787<br>
+            <i class="fas fa-map-marker-alt"></i> Address:291 South Street,<br>
+            Ms Suite, Rocky Hills,<br>
+            TITANX-007 - &98UTF8.
+        </address><hr><br>
+        
+        <h1 style="letter-spacing:5px;font-family: 'Dancing Script', cursive;">Rocky Creations</h1>
+        <p>Follow me <i class="fas fa-at"></i></p>
+        <img src="Images/facebook.png" alt="Image here">&nbsp
+        <img src="Images/instagram.png" alt="Image here"><br><br>
+        <p style="display:inline;">
+        Copyrights <i class="far fa-copyright"></i> 2020 All rights reserved|Made by</p>
+         <p style="display:inline;">Harsha <i class="animate__animated animate__heartBeat fas fa-heart"></i></p>
+        
+    </div>
+
+</section>
+
+</div>
+
+<span id="back-to-top"><i class="fas fa-arrow-up"></i></span>  
+     
+<script>
+
+    var x = document.getElementById("loader");
+    var q = document.getElementById("qe");
+    var ar= document.getElementById("ar");
+    var aw = document.getElementById("aw");
+
+function funy(){
+
+if(q.style.display=="none"){
+
+    q.style.display="block";
+    if (q.style.display=="block"){
+        ar.style.transform="rotate(180deg)";
+        q.style.backgroundColor="#444";
+        q.style.color="#fff";
+        aw.style.color="#fff";
+    }
+
+}
+
+else{
+        q.style.display="none";
+        ar.style.transform="rotate(-0deg)";
+        q.style.backgroundColor="#fff";
+        q.style.color="#000";
+        aw.style.color="#444";
+}
+
+}
+
+function fun(){
+    x.style.display="none";
+    }
+
+</script>
+
+    </body>
+</html>

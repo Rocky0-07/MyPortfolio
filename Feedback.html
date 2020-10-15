@@ -1,0 +1,223 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Feedback</title>
+        <meta name="description" content="My Portfolio Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/feedback.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d8c7e812b0.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" 
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+     crossorigin="anonymous"></script>
+    <script src="Script/feedback.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body onload="load()">
+
+        <div id="loader">
+            <div class="spinner-border ">
+            </div>
+            <h4 class="text-center">Relax Amigo</h4>
+            </div>
+
+    <div class="content">
+
+        <section id="navbar">
+        
+            <nav class="navbar navbar-expand-md">
+    
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#a">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="#" class="navbar-brand">My Portfolio</a>
+    
+                <div id="a" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a><span></span></li>
+                        <li class="nav-item"><a class="nav-link" href="About.html" id="about">About</a><span></span></li>
+                        <li class="nav-item"><a class="nav-link" href="#form">Feedback</a><span></span></li>
+                    </ul>
+                </div>
+    
+            </nav>
+    
+        </section>
+
+        <section id="header">
+
+                <div>
+
+                    <form action="#" method="post" class="form-group mb-5 mx-auto w-75 bg-dark text-white">
+
+                        <h1 id="form">Feedback Form</h1>
+                        <hr>
+
+                        <div class="form-group mx-auto bg-dark">
+                            <label for="name">Name: </label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group mx-auto bg-dark">
+
+                            <label for="email">Email: </label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+
+                        <div class="form-group mx-auto bg-dark">
+
+                            <label for="design" style="padding-right:2%;">UI: </label>
+                            <i id="q" class="fas fa-star" onclick="funq()"></i>
+                            <i id="b" class="fas fa-star" onclick="funb()"></i>
+                            <i id="c" class="fas fa-star" onclick="func()"></i>
+                            <i id="d" class="fas fa-star" onclick="fund()"></i>
+                            <i id="e" class="fas fa-star" onclick="fune()"></i>
+                        
+                        </div>
+
+                        <div class="form-group mx-auto bg-dark">
+
+                            <label for="ui" style="padding-right:2%;">Design: </label>
+                            <i id="w" class="fas fa-star" onclick="funw()"></i>
+                            <i id="f" class="fas fa-star" onclick="funf()"></i>
+                            <i id="g" class="fas fa-star" onclick="fung()"></i>
+                            <i id="h" class="fas fa-star" onclick="funh()"></i>
+                            <i id="i" class="fas fa-star" onclick="funi()"></i>
+                        </div>
+
+                        <div class="form-group mx-auto bg-dark">
+
+                            <label for="ui" style="padding-right:2%;">Comments: </label><br>
+                                    <textarea class="textinput form-control" rows="5" placeholder="Comment" style="resize:none"></textarea>
+                                    <br>
+                                    <input id="but" type="submit" value="Submit" class="bg-light mt-5 mx-auto d-block">
+                        
+                        </div>
+
+                    </form>
+
+                </div>
+
+        </section>
+
+    </div>
+
+        <script>
+        
+        var q = document.getElementById("q");
+        var b = document.getElementById("b");
+        var c = document.getElementById("c");
+        var d = document.getElementById("d");
+        var e = document.getElementById("e");
+
+        var w = document.getElementById("w");
+        var f = document.getElementById("f");
+        var g = document.getElementById("g");
+        var h = document.getElementById("h");
+        var i = document.getElementById("i");
+
+        var lo = document.getElementById("loader");
+
+        var col = "red";
+        var no = "white";
+
+        function load(){
+        lo.style.display="none";
+    }
+
+        //----------Design--------------//
+
+            function funq(){
+                q.style.color=col;
+                b.style.color=no;
+                c.style.color=no;
+                d.style.color=no;
+                e.style.color=no
+            }
+
+            function funb(){
+                q.style.color=col;
+                b.style.color=col;
+                c.style.color=no;
+                d.style.color=no;
+                e.style.color=no;
+            }
+
+            function func(){
+                q.style.color=col;
+                b.style.color=col;
+                c.style.color=col;
+                d.style.color=no;
+                e.style.color=no;
+            }
+
+            function fund(){
+                q.style.color=col;
+                b.style.color=col;
+                c.style.color=col;
+                d.style.color=col;
+                e.style.color=no;
+            }
+
+            function fune(){
+                q.style.color=col;
+                b.style.color=col;
+                c.style.color=col;
+                d.style.color=col;
+                e.style.color=col;
+            }
+
+            //-------------UI----------------//
+
+            function funw(){
+                w.style.color=col;
+                f.style.color=no;
+                g.style.color=no;
+                h.style.color=no;
+                i.style.color=no
+            }
+
+            function funf(){
+                w.style.color=col;
+                f.style.color=col;
+                g.style.color=no;
+                h.style.color=no;
+                i.style.color=no;
+            }
+
+            function fung(){
+                w.style.color=col;
+                f.style.color=col;
+                g.style.color=col;
+                h.style.color=no;
+                i.style.color=no;
+            }
+
+            function funh(){
+                w.style.color=col;
+                f.style.color=col;
+                g.style.color=col;
+                h.style.color=col;
+                i.style.color=no;
+            }
+
+            function funi(){
+                w.style.color=col;
+                f.style.color=col;
+                g.style.color=col;
+                h.style.color=col;
+                i.style.color=col;
+            }
+
+        </script>
+    </body>
+</html>

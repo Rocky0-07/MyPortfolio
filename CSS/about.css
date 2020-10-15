@@ -1,0 +1,457 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+}
+
+::selection{
+    background-color:#bdc3c7 ;
+    color:#02aab0;
+}
+
+.content{
+    max-width:1400px;
+    margin:auto;
+}
+
+#navbar{
+    position:sticky;
+    top:0;
+    z-index:99;
+    background-color:white;
+    box-shadow:0px 2px 10px grey;
+    transition:0.3s;
+}
+
+.navbar-brand{
+    color:black !important;
+    font-family: 'Alata', sans-serif;
+    letter-spacing:4px;
+    font-size:25px !important;
+}
+
+.navbar-toggler{
+    outline:none !important;
+}
+
+.navbar-toggler:hover{
+    background-color:black !important;
+    color:white !important;
+}
+
+nav li a{
+    font-family: 'Alata', sans-serif;
+    padding-top:8px !important;
+    padding-bottom:8px !important;
+    padding-right:20px !important;
+    padding-left:14px !important;
+    color:black !important;
+    letter-spacing:4px;
+}
+
+nav ul li span{
+    display:block;
+    width:0%;
+    height:5px;
+    background-color:black;
+    transition:0.6s;
+}
+
+nav ul li:hover span{
+    width:100%;
+}
+
+button i{
+    font-size:25px;
+}
+
+/*-------------------------header------------------------*/
+
+#header{
+    color:white;
+    text-align:center;
+    box-shadow:0px 2px 10px black, 0px 2px 20px grey;
+}
+
+#header .carousel h2{
+    font-family: 'Major Mono Display', monospace;
+    letter-spacing:5px;
+    padding-bottom:10px;
+    font-size:2.5vw;
+}
+
+.fa-circle{
+    color:whitesmoke;
+    font-size:5vw;
+    z-index:5;
+}
+
+.carousel .carousel-inner .carousel-caption #te{
+    color:black;
+    font-size:2.5vw;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing:3px;
+    word-spacing:5px;
+    line-height:1.5;
+}
+
+.carousel h2{
+    font-size:3vw;
+}
+
+.carousel #tex{
+    font-size:2.5vw;
+    font-family: 'Great Vibes', cursive;
+    color:white;
+}
+
+#header{
+    animation-name: carousal;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes carousal{
+    from{opacity:0.5;}
+    to{opacity:1}
+}
+
+/*--------------------------Welcome---------------------*/
+
+#welcome{
+    padding-top:80px;
+}
+
+#welcome h2{
+    text-align:center;
+    letter-spacing:8px;
+    font-weight:bold;
+    font-family: 'Orbitron', sans-serif;
+    }
+
+#welcome hr{
+    width:100px;
+    background-color:black;
+}
+
+/*-----------------------Design-----------------------*/
+
+#design{
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:40px;
+    text-align:center;
+}
+
+#design hr{
+    width:100px;
+    background-color:black;
+}
+
+#design p{
+    letter-spacing: 5px;
+}
+
+#design h4{
+    font-family: lucida console;
+    letter-spacing: 3px;
+}
+
+#design h1{
+    font-family: 'Orbitron', sans-serif;   
+}
+
+#design h1 strong{
+    color:grey;
+}
+
+#design ul li{
+    font-size:20px;
+}
+
+/*------------------------passion-----------------------*/
+
+#passion .container p{
+    color:black;
+    font-size:20px;
+    letter-spacing:1px;
+}
+
+#passion hr{
+    width:100px;
+    background-color:black;
+}
+
+#passion p{
+    letter-spacing: 5px;
+}
+
+#passion h4{
+    font-family: lucida console;
+    letter-spacing: 3px;
+}
+
+#passion h1{
+    word-spacing:10px;
+    font-size:40px;
+    padding-bottom:20px;
+    word-wrap: break-word;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#passion a{
+    border-radius:10px;
+    padding:10px;
+    text-decoration:none;
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+    box-shadow:0px 2px 5px black;
+}
+
+#passion a:hover{
+    background-color:white !important;
+    color:black;
+}
+
+/*----------------------Services-------------------*/
+
+#services{
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:40px;
+    text-align:center;
+}
+
+#services hr{
+    width:100px;
+    background-color:black;
+}
+
+#services p{
+    letter-spacing: 5px;
+}
+
+#services h3{
+    font-family: 'Orbitron', sans-serif;
+    padding:20px 0px;
+    word-wrap: break-word;
+}
+
+#services h4{
+    font-family: lucida console;
+    letter-spacing: 3px;
+}
+
+#services .card{
+    border-radius:0px !important;
+    color:white;
+}
+
+#services .card:hover{
+    background-color:white !important;
+    color:black;
+    box-shadow:0px 0px 10px grey;
+}
+
+#services .card h4{
+    font-family: 'Dancing Script', cursive;
+    letter-spacing:5px;
+}
+
+.fa-pen-nib, .fa-images, .fa-file-code{
+    font-size:40px;
+    padding-bottom:20px;
+}
+
+
+/*-------------------------Feedback-----------------------*/
+
+#feedback hr{
+    width:100px;
+    background-color:black;
+}
+
+#feedback h3{
+    font-family: 'Orbitron', sans-serif;
+    padding:20px 0px;
+}
+
+#feedback h4{
+    font-family: lucida console;
+    letter-spacing: 3px;
+}
+
+.media{
+    padding:20px;
+    margin:10px;
+}
+
+.media img{
+    width:100px;
+    height:70px;
+}
+
+.media p{
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing:1px;
+}
+
+/*-------------------------#work--------------------------*/
+
+#work hr{
+    width:100px;
+    background-color:black;
+}
+
+#work h4{
+    font-family: lucida console;
+    letter-spacing: 3px;
+}
+
+#work h1{
+    font-family: 'Orbitron', sans-serif;
+}
+
+#work .row #aw{
+    font-size:70px;
+    opacity: 1;
+    transition: 0.5s;
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+
+#work .row #ar{
+    font-size: 75px;
+    transition: 0.5s;
+}
+
+@keyframes arrow{
+    from{transform: translateY(60px); opacity: 0;}
+    to{transform: translateY(30px); opacity: 0.6;}
+}
+
+input{
+    border-radius:0px !important;
+}
+
+textarea{
+    resize:none;
+    overflow:auto;
+    border-radius: 0px !important;
+}
+
+textarea:focus{
+    background-color:#ddd !important;
+}
+
+input:focus{
+    background-color:#ddd !important;
+}
+
+input[type=button]{
+    background-color:white !important;
+    color:black;
+    font-weight: bold !important;
+}
+
+/*-------------------Footer---------------------*/
+
+#footer div{
+    text-align:center;
+    padding:40px 0px;
+    margin-top:30px;
+    background-color:#c4e0e5;
+    width:100%;
+    height:auto;
+    line-height:2;
+    box-sizing:border-box;
+    transition:0.6s;
+    }
+    
+#footer div hr{
+    width:100px;
+    background-color:black;
+}
+
+.fa-phone{
+transform:rotate(100deg);
+}
+
+    #footer img{
+        width:30px;
+        height:30px;
+        }
+    
+    .fa-heart{
+    text-shadow:0px 0px 5px white;
+    color: red;
+    animation-duration:1.5s !important;
+    animation-iteration-count:infinite;
+    }
+
+    /*-------------------Back to top-------------------*/
+
+    .fa-arrow-up{
+        position:fixed;
+        bottom:20px;
+        right:30px;
+        font-size:2vw;
+        background-color:white;
+        padding:10px;
+        color:#444444;
+        border-radius:10px;
+        cursor:pointer;
+        outline:none;
+        transition:0.5s;
+        display: none;
+    }
+
+    #back-to-top{
+        display:none;
+    }
+
+    .fa-arrow-up:hover{
+    color:black;
+    transform:scale(1.1);
+    }
+
+    #design, #ba, #bb, #bc, #sa, #sb, #ca, #cb, #sc, #da, #sd, #r, #t{
+        opacity:0;
+    }
+
+    #design.animate__animated, #ba.animate__animated, #bb.animate__animated, #bc.animate__animated, 
+    #sa.animate__animated, #sa.animate__animated, #ca.animate__animated, #cb.animate__animated, 
+    #sc.animate__animated, #t.animate__animated, #da.animate__animated, #sd.animate__animated, #r.animate__animated{
+        opacity:1;
+    }
+
+    /*---------------------loader--------------------*/
+
+    #loader{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background-color:#c4e0e5;
+        z-index:999;
+        text-align:center;
+    }
+
+    #loader .spinner-border{
+        color:white !important;
+        position:absolute;
+        top:50%;
+    }
+    
+    #loader h4{
+        font-family: 'Pacifico', cursive;
+        color:white;
+        letter-spacing: 5px;
+        position:relative;
+        top:56%;
+    }
