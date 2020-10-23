@@ -141,6 +141,24 @@ $(document).ready(function(){
         offset: "80%"
     });
 
+    $(".pgh").waypoint(function(direction){
+        $(".pgh").animate({width:"85%"});
+    }, {
+        offset: "80%"
+    });
+
+    $(".pgi").waypoint(function(direction){
+        $(".pgi").animate({width:"75%"});
+    }, {
+        offset: "85%"
+    });
+
+    $(".pgj").waypoint(function(direction){
+        $(".pgj").animate({width:"65%"});
+    }, {
+        offset: "85%"
+    });
+
     $(".pgf").waypoint(function(direction){
         $(".pgf").animate({width:"80%"});
     }, {
