@@ -57,7 +57,7 @@
 
                 <div>
 
-                    <form action="#" method="post" class="form-group mb-5 mx-auto w-75 bg-dark text-white">
+                    <form name='myForm' action="#" method="post" class="form-group mb-5 mx-auto w-75 bg-dark text-white">
 
                         <h1 id="form">Feedback Form</h1>
                         <hr>
@@ -99,7 +99,7 @@
                             <label for="ui" style="padding-right:2%;">Comments: </label><br>
                                     <textarea class="textinput form-control" rows="5" placeholder="Comment" style="resize:none"></textarea>
                                     <br>
-                                    <input id="but" type="submit" value="Submit" class="bg-light mt-5 mx-auto d-block">
+                                    <input id="but" type="submit" onclick="show()" value="Submit" class="bg-light mt-5 mx-auto d-block">
                         
                         </div>
 
@@ -112,6 +112,9 @@
     </div>
 
         <script>
+
+        var num1 = 0;
+        var num2 = 0;
         
         var q = document.getElementById("q");
         var b = document.getElementById("b");
@@ -141,7 +144,8 @@
                 b.style.color=no;
                 c.style.color=no;
                 d.style.color=no;
-                e.style.color=no
+                e.style.color=no;
+                num1 = 1;
             }
 
             function funb(){
@@ -150,6 +154,7 @@
                 c.style.color=no;
                 d.style.color=no;
                 e.style.color=no;
+                num1 = 1;
             }
 
             function func(){
@@ -158,6 +163,7 @@
                 c.style.color=col;
                 d.style.color=no;
                 e.style.color=no;
+                num1 = 1;
             }
 
             function fund(){
@@ -166,6 +172,7 @@
                 c.style.color=col;
                 d.style.color=col;
                 e.style.color=no;
+                num1 = 1;
             }
 
             function fune(){
@@ -174,6 +181,7 @@
                 c.style.color=col;
                 d.style.color=col;
                 e.style.color=col;
+                num1 = 1;
             }
 
             //-------------UI----------------//
@@ -183,7 +191,8 @@
                 f.style.color=no;
                 g.style.color=no;
                 h.style.color=no;
-                i.style.color=no
+                i.style.color=no;
+                num2 = 1;
             }
 
             function funf(){
@@ -192,6 +201,7 @@
                 g.style.color=no;
                 h.style.color=no;
                 i.style.color=no;
+                num2 = 1;
             }
 
             function fung(){
@@ -200,6 +210,7 @@
                 g.style.color=col;
                 h.style.color=no;
                 i.style.color=no;
+                num2 = 1;
             }
 
             function funh(){
@@ -208,6 +219,7 @@
                 g.style.color=col;
                 h.style.color=col;
                 i.style.color=no;
+                num2 = 1;
             }
 
             function funi(){
@@ -216,6 +228,15 @@
                 g.style.color=col;
                 h.style.color=col;
                 i.style.color=col;
+                num2 = 1;
+            }
+
+            function show(){
+                var na = document.forms["myForm"]["name"].value;
+                var em = document.forms["myForm"]["email"].value;
+                if (na != "" && em != "" && num1 == 1 && num2 == 1 ) {
+                    alert("Thank you for your valuable Feedback");
+                }
             }
 
         </script>
